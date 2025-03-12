@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula e analise de imc </title>
+</head>
+<body>
+    <script>
+        //obter altura em metros e peso em quilogramas do usuário
+        //Calcular o IMC = peso/(altura * altura)
+        //verificar se o imc está no intervalo entre 18.5 e 35
+        // se estiver nesse intervalo exibir o imc e dar os parabéns para o usuário
+        //se estiver abaico de 18.5 exibir "Seu imcindica que você está abaixo do pesso!
+        
+        
+        
+        let altura = prompt("Qual é sua altura ?");
+        let peso = prompt("Qual é seu Peso?");
+
+        function calcularImc(peso, altura){
+            return (peso/ (altura * altura)).toFixed(0)
+        }
+        let imc = calcularImc(peso, altura);
+        document.write("Seu IMC é:   " + imc  );
+
+        if(imc < 18.5){
+            document.write(" Seu IMC indica que você abaixo do peso");
+        }else if(imc >= 18.5 && imc <= 35){
+            document.write(" Parabéns você esta na media!");
+        }else if(imc > 35){
+            document.write(" Seu IMC indica que você está acima do peso!")
+                }      
+
+    </script>
+</body>
+</html>
