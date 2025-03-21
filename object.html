@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</Object></title>
+</head>
+<body>
+    <script>
+        let aluno ={
+
+            nome: "aline",
+            idade:15,
+            sesi: "ipiranga",
+            temPet:true 
+
+        }
+        
+
+        
+
+        document.write('Nome:' + aluno.nome + '<br>');
+        document.write('Idade:' + aluno.idade + '<br>');
+        document.write('SESI:' + aluno.sesi + '<br>');
+        document.write('TemPet:' + aluno.temPet + '<br>')
+
+        // Criando um array de objetos
+
+        let alunos = [
+            {nome: 'Aline', idade:15, sesi: 'Ipiranga', TemPet:true},
+            {nome: 'Bábara', idade:16, sesi: 'Vila Leopoldina', TemPet:true},
+
+
+        ];
+
+
+        for (let i = 0; i < alunos.lenght; i++){
+        //document.write('<p>O(a) Aluno(a)' + alunos[i].nome + 'tem' + 
+        //alunos[i].idade + ' anos e é do SESI ' + alunos[i].sesi +' .</p>');
+
+            document.write(`<p>O(a) aluno(a) ${alunos[i].nome} tem ${alunos[i]
+                .idade} anos e é do SESI ${alunos[i].sesi}. ${alunos[i].temPet ?"Tem  Pet." : "Não tem pet."}</p>`);
+        }
+
+
+        
+    
+        
+
+    </script>
+</body>
+</html>
